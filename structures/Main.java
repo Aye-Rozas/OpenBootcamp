@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -28,6 +30,12 @@ public class Main {
      * Pedir un numero al usuario e imprimir si el numero es divisible por dos (num % 2 == 0)
      */
     public static void divisible() {
+        System.out.println("Ingrese un numero");
+        Scanner scanner = new Scanner(System.in);
+        int myNumber = scanner.nextInt();
+        if (myNumber % 2 == 0) {
+            System.out.println("El numero es divisible por 2");
+        }
 
     }
 
@@ -35,6 +43,15 @@ public class Main {
      * Mostrar los numeros del 1 al 100 que sean multiplos de 3
      */
     public static void multiplos() {
+        int counter = 1;
+        int f = 100;
+
+        while (counter < f) {
+            if (counter % 3 == 0) {
+                System.out.println(counter);
+            }
+            counter++;
+        }
 
     }
 
@@ -45,6 +62,26 @@ public class Main {
      * 4. Si a los 3 intentos, el usuario sigue ingresando un pass invalido, terminar el programa
      */
     public static void password() {
+        String password = "ginny";
+        Scanner in = new Scanner(System.in);
+        System.out.println("Ingrese mail");
+        String name = in.nextLine();
+        System.out.println("El mail ingresado es:" + name);
+
+
+        int counter = 0;
+        int f = 3;
+        while (counter < f) {
+            System.out.println("Ingrese contraseña");
+            String input = in.nextLine();
+            if (password.equals(input)) {
+                System.out.println("Mail y contraseña son correctos");
+                break;
+            } else {
+                System.out.println("Clave incorrecta");
+            }
+            counter++;
+        }
 
     }
 }
