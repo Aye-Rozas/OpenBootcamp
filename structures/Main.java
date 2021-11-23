@@ -36,7 +36,6 @@ public class Main {
         if (myNumber % 2 == 0) {
             System.out.println("El numero es divisible por 2");
         }
-
     }
 
     /**
@@ -52,7 +51,6 @@ public class Main {
             }
             counter++;
         }
-
     }
 
     /**
@@ -82,6 +80,46 @@ public class Main {
             }
             counter++;
         }
+    }
+
+    /**
+     * Pedir al usuario que ingrese 5 veces un numero que desee
+     * y calcular el promedio de esos 5 numeros, e imprimir en pantalla el resultado
+     */
+    public static void average() {
+
+    }
+
+    /**
+     * Pedir al usuario ingresar un numero mayor a 1. Luego, imprimir en pantalla una escalera de "x"
+     * Por ejemplo: usuario ingresa el numero 3. Se tiene que imprimir en pantalla el siguiente patron:
+     * x
+     * xx
+     * xxx
+     *
+     * Segundo ejemplo: usuario ingresa el numero 6. Se imprime en pantalla el siguiente patron:
+     * x
+     * xx
+     * xxx
+     * xxxx
+     * xxxxx
+     * xxxxxx
+     *
+     */
+    public static void staircase() {
+
+    }
+
+    /**
+     * Pedir al usuario que ingrese un numero (superior a 1)
+     * El metodo debe imprimir "el numero es primo" o "el numero no es primo" al evaluar
+     * si el numero ingresado es primo o no
+     *
+     * Un numero es primo si es divisible por si mismo y por 1 solamente (es decir, el resto de la division
+     * entre los demás numeros que lo preceden nunca debe ser distinto de 0)
+     *
+     */
+    public static void prime() {
 
     }
 }
